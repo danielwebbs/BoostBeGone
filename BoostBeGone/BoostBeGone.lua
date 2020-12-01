@@ -9,7 +9,7 @@ local function has_value (tab, msg)
     return false
 end
 
-local function myChatFilter(self, event, ...)
+local function boostFilter(self, event, ...)
     local messageIntent = { "wts", "boost", "selling", "carrying", "carries", "carry" } -- we only want to filter when the intent to sell a boost is clear
     local keywords = {"mythic+0", "mythicplus", "boost", "torghast", "arena", "hc", "mc", "mythic", "keystone", "keystones", "mythic0", "mythic+"}
 
@@ -24,5 +24,5 @@ local function myChatFilter(self, event, ...)
 
 
 
-ChatFrame_AddMessageEventFilter("CHAT_MSG_SAY", myChatFilter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_CHANNEL", myChatFilter)
+ChatFrame_AddMessageEventFilter("CHAT_MSG_SAY", boostFilter)
+ChatFrame_AddMessageEventFilter("CHAT_MSG_CHANNEL", boostFilter)
