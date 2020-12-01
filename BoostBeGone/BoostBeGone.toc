@@ -1,0 +1,5 @@
+## Interface: 90002
+## Version: 1.12
+## Author: Daniel Webb
+
+BoostBeGone.lua
